@@ -1,8 +1,28 @@
-*{
-    margin:0;
-    padding:0;
-    box-shadow: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    height:100%;
+
+html, body {
+  height: 100%;
+  background-color: #FFF;
+}
+
+.wrapper {
+  width: 100%;             
+  max-width: 1440px;        
+  margin: 0 auto;           
+  background: #fff;
+  min-height: 100%;
+}
+
+.container {
+  width: 100%;             
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.herosection {
+  width: 100%;
 }
