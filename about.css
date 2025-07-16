@@ -1,11 +1,161 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    height:100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  margin: 0;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.firstsec {
+  background-color: #eff7ff;
+}
+header {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+ul {
+  display: flex;
+  gap: 20px;
+}
+ul li {
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: #04090d;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-align: center;
+}
+buttonwrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-btn {
+  width: 138px;
+  height: 53px;
+  background-color: #139ee3;
+  gap: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+
+  text-align: center;
+  color: #fff;
+  border: 1px solid #139ee3;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frameafterheader {
+  width: 50%;
+  margin-left: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.firsttext {
+  margin-top: 70px;
+}
+.firsttext h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #04090d;
+}
+.twolinks {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.twolinks span {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.twolinks img {
+  width: 10px;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.playstores {
+  display: flex;
+  margin-top: 80px;
+  gap: 20px;
+}
+
+.watsapp {
+  background-color: #139ee3;
+  padding: 10px;
+}
+.watsapp span {
+  color: #ffffff;
+
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+.watsapp p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+}
+.watsapp img {
+  height: 20px;
+  width: 20px;
+}
+.innercontext {
+  background-color: #000000;
+  padding: 10px;
+}
+.innercontext span {
+  color: #ffffff;
+
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+.innercontext p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+.secondsec{
     width:100%;
-    margin:0;
-    
+
+}
+.onediv{
+  background: linear-gradient(to right, #000000, #666666);
+
+    width: 60%;
+margin-left:20px;
+margin-right:20px;
 }
