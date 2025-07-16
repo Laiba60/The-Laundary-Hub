@@ -98,3 +98,77 @@ li a {
   height: 10px;
   margin-top: 10px;
 }
+.pricing-section {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  margin-top: 80px;
+}
+.pricing {
+  width: 50%;
+  background-image: url("images/Bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 50px;
+  display: flex;
+}
+.pricing-card {
+  width: 237px;
+  height: 200px;
+
+  z-index: 99;
+  padding: 20px;
+
+ 
+     
+}
+.pricing-card p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+}
+.pricing-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+.pricing-card:hover {
+  border: 1px solid blue;
+}
+.secondframe{
+    width:100%;
+    background-color: #ffffff;
+}
+.textwrap{
+    width:70%;
+    background-color: #ffffff;
+  
+    margin:30px auto;
+    
+}
+.text h2{
+    font-size:40px;
+    font-family:'Lato' 'sans-serif';
+    font-weight:700;
+}
+.text p{
+    font-size:20px;
+     font-size:40px;
+    font-family:'Lato' 'sans-serif';
+    color:#7B7B7B;
+    
+}
+.listing{
+    margin-top:30px;
+}
+.firstlist span{
+    font-size:19px;
+    font-weight:400;
+    font-family:'Lato' 'sans-serif';
+     color:#04090D;
+}
+.firstlist img{
+    height:19px;
+    width:19px;
+    margin-top:20px;
+}
