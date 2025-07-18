@@ -129,7 +129,22 @@ ul li a {
   height: 40px;
   width: 130px;
 }
-sectionfooter {
+.innerdivs {
+  width: 100%;
+  max-width: 592px;
+ 
+}
+.emaildiv img,
+.phonediv img,
+.followdiv img {
+  width: 25px;
+  height: 25px;
+}
+.part2{
+    width:100%;
+    max-width:502px;
+}
+.sectionfooter {
   background-color: #f9f9f9;
   font-family: "Lato", sans-serif;
   color: #333;
