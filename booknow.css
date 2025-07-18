@@ -117,7 +117,77 @@ ul li a {
 .twolinks img {
   margin-top: 14px;
 }
-sectionfooter {
+<!-------seondsection------ > .secondsec {
+  width: 100%;
+}
+.wrappart {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #0099ff;
+}
+.wrappart {
+  display: flex;
+}
+.contactdetails {
+  width: 50%;
+  padding: 10px 0px;
+  max-width: 600px;
+}
+.content h2 {
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  color: #04090d;
+}
+.content p {
+  color: #7b7b7b;
+  font-weight: 400;
+  font-size: 16px;
+}
+.content h3 {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.feature-list span {
+  display: flex;
+}
+.feature-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #04090d;
+  font-weight: 400;
+}
+
+.feature-list .icon {
+  margin-right: 10px;
+}
+
+.feature-list .icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+.sectionfooter {
   background-color: #f9f9f9;
   font-family: "Lato", sans-serif;
   color: #333;
