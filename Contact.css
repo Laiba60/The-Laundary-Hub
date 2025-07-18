@@ -129,10 +129,8 @@ ul li a {
   height: 40px;
   width: 130px;
 }
-.innerdivs {
-  width: 100%;
-  max-width: 592px;
- 
+.contactsec {
+  padding: 60px 0;
 }
 .emaildiv img,
 .phonediv img,
@@ -140,10 +138,97 @@ ul li a {
   width: 25px;
   height: 25px;
 }
-.part2{
-    width:100%;
-    max-width:502px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
+.wholepart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.innerdivs,
+.part2 {
+  flex: 1 1 40%;
+  min-width: 200px;
+}
+
+.contactpart1 h2 {
+  font-size: 32px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #04090d;
+}
+.contactpart1 p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #7b7b7b;
+  font-family: "Lato", sans-serif;
+}
+.contactresource,
+.detailsdiv {
+  margin-top: 20px;
+}
+
+.contactresource > div {
+  margin-bottom: 20px;
+}
+
+.contactresource label,
+.detailsdiv label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #a1a1a1;
+}
+.detailsdiv input,
+.detailsdiv textarea {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.contactresource input {
+  border: none;
+}
+.detailsdiv input,
+.detailsdiv textarea,
+.contactresource input {
+  width: 100%;
+  padding: 10px;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #04090d;
+}
+
+.followdiv div {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.contactimage img {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+.submitdetails {
+  margin-top: 20px;
+}
+
+.submitdetails button {
+  background-color: #139ee3;
+  color: white;
+  padding: 12px 190px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
 .sectionfooter {
   background-color: #f9f9f9;
   font-family: "Lato", sans-serif;
