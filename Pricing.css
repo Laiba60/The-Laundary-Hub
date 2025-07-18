@@ -8,13 +8,14 @@ body {
   height: 100%;
 }
 .container {
-  width: 100%;
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* 👈 consistent spacing */
 }
 .wrapper {
   width: 100%;
-  margin: 0 auto;
 }
+
 .firstsec {
   background-color: #eff7ff;
 }
@@ -118,9 +119,6 @@ li a {
 
   z-index: 99;
   padding: 20px;
-
- 
-     
 }
 .pricing-card p {
   font-size: 14px;
@@ -135,40 +133,38 @@ li a {
 .pricing-card:hover {
   border: 1px solid blue;
 }
-.secondframe{
-    width:100%;
-    background-color: #ffffff;
+.secondframe {
+  width: 100%;
+  background-color: #ffffff;
 }
-.textwrap{
-    width:70%;
-    background-color: #ffffff;
-  
-    margin:30px auto;
-    
+.textwrap {
+  width: 70%;
+  background-color: #ffffff;
+
+  margin: 30px auto;
 }
-.text h2{
-    font-size:40px;
-    font-family:'Lato' 'sans-serif';
-    font-weight:700;
+.text h2 {
+  font-size: 40px;
+  font-family: "Lato" "sans-serif";
+  font-weight: 700;
 }
-.text p{
-    font-size:20px;
-     font-size:40px;
-    font-family:'Lato' 'sans-serif';
-    color:#7B7B7B;
-    
+.text p {
+  font-size: 20px;
+  font-size: 40px;
+  font-family: "Lato" "sans-serif";
+  color: #7b7b7b;
 }
-.listing{
-    margin-top:30px;
+.listing {
+  margin-top: 30px;
 }
-.firstlist span{
-    font-size:19px;
-    font-weight:400;
-    font-family:'Lato' 'sans-serif';
-     color:#04090D;
+.firstlist span {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Lato" "sans-serif";
+  color: #04090d;
 }
-.firstlist img{
-    height:19px;
-    width:19px;
-    margin-top:20px;
+.firstlist img {
+  height: 19px;
+  width: 19px;
+  margin-top: 20px;
 }

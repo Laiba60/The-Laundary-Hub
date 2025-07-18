@@ -3,23 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
 }
+
 .container {
-  width: 100%;
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* 👈 consistent spacing */
 }
+
 .wrapper {
   width: 100%;
-  margin: 0 auto;
 }
+
 .firstsec {
   background-color: #eff7ff;
 }
+
 header {
   display: flex;
   display: flex;
@@ -46,7 +51,7 @@ li a {
   letter-spacing: 0;
   text-align: center;
 }
-buttonwrap {
+.buttonwrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,8 +78,6 @@ buttonwrap {
   width: 50%;
   margin-left: 50px;
   margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
 }
 .firsttext {
   margin-top: 70px;
@@ -103,59 +106,119 @@ buttonwrap {
   margin-top: 10px;
 }
 
-.playstores {
-  display: flex;
-  margin-top: 80px;
-  gap: 20px;
+.secondsec {
+  width: 100%;
 }
 
-.watsapp {
+.twodiv {
+  background: linear-gradient(
+    108.05deg,
+    rgba(0, 0, 0, 0.47) -1.83%,
+    rgba(102, 102, 102, 0) 61.26%
+  );
+  height: 300px;
+}
+
+.text {
+  padding-top: 60px;
+}
+
+.text h2 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.text p {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.buttondiv button {
   background-color: #139ee3;
-  padding: 10px;
+  border: 1px solid #139ee3;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-left: 25px;
 }
-.watsapp span {
-  color: #ffffff;
 
-  font-size: 25px;
-  font-weight: 700;
-  font-family: "Lato", sans-serif;
+.sectionfooter {
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  padding-top: 30px;
+  position: relative;
 }
-.watsapp p {
-  color: #ffffff;
+
+.footersection {
+  padding: 20px 0;
+}
+
+.downloadAppnow {
+  background-color: #0099ff;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 40px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.downloadapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.texxt {
+  max-width: 600px;
+}
+
+.textframe1 h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.textframe1 p {
   font-size: 16px;
-  font-weight: 500;
-  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
-.watsapp img {
-  height: 20px;
-  width: 20px;
-}
-.innercontext {
-  background-color: #000000;
-  padding: 10px;
-}
-.innercontext span {
-  color: #ffffff;
 
-  font-size: 25px;
-  font-weight: 700;
-  font-family: "Lato", sans-serif;
+.textframe2 {
+  display: flex;
+  gap: 10px;
 }
-.innercontext p {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-}
-.secondsec{
-    width:100%;
 
+.googleplay img,
+.Appplaystore img {
+  height: 40px;
+  cursor: pointer;
 }
-.onediv{
-  background: linear-gradient(to right, #000000, #666666);
 
-    width: 60%;
-margin-left:20px;
-margin-right:20px;
+.Iphone14 {
+  background-image: url("images/iphone14.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 300px;
+}
+
+.vecbg {
+  background-image: url("images/Vector Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.1;
 }
