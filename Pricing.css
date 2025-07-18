@@ -117,6 +117,119 @@ ul li a {
 .twolinks img {
   margin-top: 14px;
 }
+.sec {
+  width: 100%;
+}
+.discoverpages {
+  width: 100%;
+  max-width: 1200px;
+
+  display: flex;
+}
+
+.feature-list span {
+  display: flex;
+}
+.feature-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #04090d;
+  font-weight: 400;
+}
+
+.feature-list .icon {
+  margin-right: 10px;
+}
+
+.feature-list .icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+.pricing-section {
+  background: #139ee3;
+  max-width: 55%;
+  transform: skewY(-4deg);
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-container {
+  transform: skewY(4deg);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px 10px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.card h4 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #12263e;
+}
+
+.card p {
+  margin: 0 0 15px;
+  font-size: 14px;
+  color: #12263e;
+}
+
+.card p:last-child {
+  margin-bottom: 20px;
+}
+.pricingserivices {
+  padding: 70px 90px 0px;
+}
+.pricingserivices h2 {
+  color: #04090d;
+  font-weight: 700;
+  font-size: 35px;
+  font-family: "Lato", sans-serif;
+}
+.pricingserivices h5 {
+  font-weight: 400;
+  color: #7b7b7b;
+  font-size: 22px;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 20px;
+}
+.buttonpick button {
+  background-color: #139ee3;
+  border: 1px solid #139ee3;
+  border-radius: 30px;
+  margin-top: 30px;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 19px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
 .sectionfooter {
   background-color: #f9f9f9;
   font-family: "Lato", sans-serif;
