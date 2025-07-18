@@ -117,14 +117,13 @@ ul li a {
 .twolinks img {
   margin-top: 14px;
 }
-<!-------seondsection------ > .secondsec {
+.secondsec {
   width: 100%;
 }
 .wrappart {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid #0099ff;
 }
 .wrappart {
   display: flex;
@@ -133,6 +132,7 @@ ul li a {
   width: 50%;
   padding: 10px 0px;
   max-width: 600px;
+  padding: 90px 0px;
 }
 .content h2 {
   font-weight: 700;
@@ -187,6 +187,125 @@ h3 {
   width: 24px;
   height: 24px;
 }
+
+.contactpart2 {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.pickup-form {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #a1a1a1;
+  font-family: "Lato", sans-serif;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #04090d;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.input-icon img {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.bag-options {
+  display: flex;
+  gap: 10px;
+}
+
+.bag-options button {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #04090d;
+  font-weight: 400;
+}
+
+.bag-options button.active {
+  background-color: #00aaff;
+  color: white;
+  border-color: #00aaff;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: vertical;
+  min-height: 100px;
+  font-size: 14px;
+}
+
+.subscribe-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+.subscribe-option label {
+  color: #04090d;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #139ee3;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: #008ecc;
+}
+
 .sectionfooter {
   background-color: #f9f9f9;
   font-family: "Lato", sans-serif;
