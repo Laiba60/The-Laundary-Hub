@@ -14,7 +14,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; /* 👈 consistent spacing */
+  padding: 0 20px;
 }
 
 .wrapper {
@@ -27,57 +27,66 @@ body {
 
 header {
   display: flex;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+
+  position: relative;
+  background-color: #eff7ff;
 }
+
+.nav-left,
+.buttonwrap {
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
 ul {
   display: flex;
   gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-ul li {
-  list-style-type: none;
-}
-li a {
-  text-decoration: none;
-  color: #04090d;
 
+ul li a {
+  text-decoration: none;
   font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0;
-  text-align: center;
+  color: #04090d;
 }
+
 .buttonwrap {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
+
 .app-btn {
   width: 138px;
   height: 53px;
   background-color: #139ee3;
-  gap: 10px;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-
-  text-align: center;
-  color: #fff;
-  border: 1px solid #139ee3;
   border-radius: 40px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  border: 1px solid #139ee3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .frameafterheader {
-  width: 50%;
+  width: 80%;
+  max-width: 1200px;
   margin-left: 50px;
   margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 .firsttext {
   margin-top: 70px;
@@ -92,6 +101,7 @@ li a {
   display: flex;
   align-items: center;
   gap: 4px;
+  margin-bottom: 20px;
 }
 .twolinks span {
   font-family: "Lato", sans-serif;
@@ -101,11 +111,16 @@ li a {
   margin-top: 10px;
 }
 .twolinks img {
-  width: 10px;
-  height: 10px;
-  margin-top: 10px;
+  margin-top: 14px;
 }
-
+.playstores {
+  display: flex;
+  margin-top: 80px;
+}
+.applestore img {
+  height: 40px;
+  width: 130px;
+}
 .secondsec {
   width: 100%;
 }
