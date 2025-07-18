@@ -1,9 +1,337 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    height:100%;
-    background-color:#fff;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrapper {
+  width: 100%;
+}
+.bg {
+  background-color: #eff7ff;
+}
+.firstsec {
+  background-color: #eff7ff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  position: relative;
+  background-color: #eff7ff;
+}
+
+.nav-left,
+.buttonwrap {
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-left: 150px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #04090d;
+}
+
+.buttonwrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app-btn {
+  width: 138px;
+  height: 53px;
+  background-color: #139ee3;
+  border-radius: 40px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  border: 1px solid #139ee3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frameafterheader {
+  width: 96%;
+  max-width: 1200px;
+  margin-left: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.firsttext {
+  margin-top: 70px;
+}
+.firsttext h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #04090d;
+}
+.twolinks {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+.twolinks span {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.twolinks img {
+  margin-top: 14px;
+}
+.playstores {
+  display: flex;
+  margin-top: 80px;
+}
+.applestore img {
+  height: 40px;
+  width: 130px;
+}
+.googleplay img {
+  height: 40px;
+  width: 130px;
+}
+sectionfooter {
+  background-color: #f9f9f9;
+  font-family: "Lato", sans-serif;
+  color: #333;
+  padding-top: 30px;
+  position: relative;
+}
+
+.footersection {
+  padding: 20px 0;
+}
+
+.downloadAppnow {
+  background-color: #0099ff;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 40px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.downloadapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.texxt {
+  max-width: 600px;
+}
+
+.textframe1 h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.textframe1 p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.textframe2 {
+  display: flex;
+  gap: 10px;
+}
+
+.googleplay img,
+.Appplaystore img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.Iphone14 {
+  background-image: url("images/iphone14.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 300px;
+}
+
+.vecbg {
+  background-image: url("images/Vector Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.1;
+}
+.secondpart {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  font-family: "Lato", sans-serif;
+}
+
+.secondpart .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.firstdiv {
+  padding-top: 70px;
+}
+
+.firstdiv,
+.seconddiv,
+.thirddiv,
+.fourthdiv {
+  flex: 1;
+  min-width: 220px;
+}
+.secondcontent ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  max-width: 200px;
+}
+
+.secondcontent ul li {
+  width: 50%;
+  font-size: 14px;
+  color: #333;
+}
+.thirddiv ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  max-width: 200px;
+}
+
+.thirddiv ul li {
+  width: 50%;
+  font-size: 14px;
+  color: #333;
+}
+.firstcontent p,
+.secondcontent ul li,
+.thirddiv ul li,
+.fourthdiv p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.firstcontent span img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.secondcontent ul,
+.thirddiv ul {
+  list-style: none;
+  padding: 0;
+}
+
+.secondcontent ul li,
+.thirddiv ul li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.secondcontent ul li:hover,
+.thirddiv ul li:hover {
+  color: #139ee3;
+}
+
+.emailcontent {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+.emailcontent input[type="email"] {
+  border: none;
+  outline: none;
+  padding: 10px;
+  flex: 1;
+  font-size: 14px;
+  border-radius: 30px;
+}
+
+.emailcontent span img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.lastline {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+.social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.social-icons img {
+  height: 20px;
+  width: 20px;
 }
