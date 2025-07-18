@@ -14,7 +14,6 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .wrapper {
@@ -82,4 +81,141 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: transparent;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.app-btn {
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 60px;
+  position: relative;
+  background-color: #eff7ff;
+}
+
+.tagline {
+  background-color: #007bd9;
+  color: white;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.subtext {
+  font-size: 18px;
+  color: #7b7b7b;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.primary-btn {
+  background-color: #00aaff;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: #fff;
+  color: #00aaff;
+  border: 2px solid #00aaff;
+}
+
+/* Testimonial Box */
+.testimonial {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  max-width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.customer {
+  margin-top: 10px;
+}
+
+.stars {
+  color: #f8b400;
+}
+.allservices{
+display:flex;
+}
+.onediv img,
+.twodiv img,
+.thirddiv img{
+width:40px;
+height:40px;
+margin-bottom:20px;
+}
+.onediv p,
+.twodiv p,
+.thirddiv p{
+  color:#7B7B7B;
+  font-weight:400;
+  font-size:16px;
+  font-family: "Lato", sans-serif;
+}
+.onediv h2,
+.twodiv h2,
+.thirddiv h2{
+  font-size:22px;
+  font-weight:700;
+    font-family: "Lato", sans-serif;
+    color:#04090D;
 }
