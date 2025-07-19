@@ -255,6 +255,44 @@ ul li a {
   color: #7b7b7b;
   padding-bottom: 30px;
 }
-.thirdsec{
+.fourthsec{
   width:100%;
+}
+.contair{
+
+  background-color: #139EE3;
+
+  display: flex;
+ margin:40px 0px;
+ padding:30px 40px 0px 40px;
+}
+.bluecontent{
+  padding-top:40px;
+}
+.bluecontent h3{
+  color:#FFFFFF;
+  font-size:48px;
+  font-weight:700;
+   font-family: "Lato", sans-serif;
+     margin-top:40px;
+}
+.bluecontent p{
+  color:#FFFFFF;
+  font-size:18px;
+  font-weight:400;
+   font-family: "Lato", sans-serif;
+    margin-bottom:10px;
+     margin-top:10px;
+}
+button{
+  color:#000000;
+  background-color: #FFFFFF;
+
+  font-size:16px;
+  font-weight:400;
+   font-family: "Lato", sans-serif;
+   cursor: pointer;
+   padding:20px 30px;
+   border:1px solid #FFFFFF;
+   border-radius:30px;
 }
