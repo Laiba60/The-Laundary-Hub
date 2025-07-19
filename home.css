@@ -118,7 +118,10 @@ ul li a {
   text-decoration: none;
   font-weight: 600;
 }
-
+.sec {
+  width: 100%;
+  margin-top: 20px;
+}
 /* Hero Section */
 .hero {
   padding: 80px 60px;
@@ -193,29 +196,65 @@ ul li a {
 .stars {
   color: #f8b400;
 }
-.allservices{
-display:flex;
+.allservices {
+  display: flex;
 }
+
 .onediv img,
 .twodiv img,
-.thirddiv img{
-width:40px;
-height:40px;
-margin-bottom:20px;
+.thirddiv img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
 }
 .onediv p,
 .twodiv p,
-.thirddiv p{
-  color:#7B7B7B;
-  font-weight:400;
-  font-size:16px;
+.thirddiv p {
+  color: #7b7b7b;
+  font-weight: 400;
+  font-size: 16px;
   font-family: "Lato", sans-serif;
 }
 .onediv h2,
 .twodiv h2,
-.thirddiv h2{
-  font-size:22px;
-  font-weight:700;
-    font-family: "Lato", sans-serif;
-    color:#04090D;
+.thirddiv h2 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: #04090d;
+  padding-bottom: 20px;
+}
+.text h2 {
+  margin-bottom: 10px;
+  color: #04090d;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+.text p {
+  margin-bottom: 30px;
+  color: #7b7b7b;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+.onediv a,
+.twodiv a,
+.thirddiv a {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  padding-bottom: 30px;
+}
+.onediv p,
+.twodiv p,
+.thirddiv p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  color: #7b7b7b;
+  padding-bottom: 30px;
+}
+.thirdsec{
+  width:100%;
 }
