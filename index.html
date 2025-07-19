@@ -464,5 +464,79 @@
         </footer>
       </div>
     </div>
+    <script src="script.js">
+            document.addEventListener("DOMContentLoaded", () => {
+
+        document.querySelectorAll("nav ul li a").forEach(link => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const section = this.getAttribute("href");
+            if (section.startsWith("#")) {
+              document.querySelector(section).scrollIntoView({
+                behavior: "smooth"
+              });
+            }
+          });
+        });
+
+
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        window.addEventListener("scroll", () => {
+          let current = "";
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (scrollY >= sectionTop - 60) {
+              current = section.getAttribute("class");
+            }
+          });
+
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current)) {
+              link.classList.add("active");
+            }
+          });
+        });
+
+
+        const emailInput = document.querySelector(".emailcontent input");
+        const submitBtn = document.querySelector(".emailcontent span:last-child");
+
+        if (emailInput && submitBtn) {
+          submitBtn.addEventListener("click", () => {
+            const email = emailInput.value.trim();
+            if (validateEmail(email)) {
+              alert(`Thanks for subscribing with ${email}!`);
+              emailInput.value = "";
+            } else {
+              alert("Please enter a valid email address.");
+            }
+          });
+        }
+
+        function validateEmail(email) {
+          const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return re.test(email);
+        }
+
+
+        const planButtons = document.querySelectorAll(".basicplan button, .premiumplan button");
+        planButtons.forEach(btn => {
+          btn.addEventListener("click", () => {
+            alert("Plan selected! Thank you for choosing us.");
+          });
+        });
+
+
+        const bookingBtn = document.querySelector(".primary-btn");
+        if (bookingBtn) {
+          bookingBtn.addEventListener("click", () => {
+            alert("Redirecting to booking form (not implemented yet).");
+          });
+        }
+      });
+    </script>
   </body>
 </html>

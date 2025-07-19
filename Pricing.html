@@ -196,5 +196,49 @@
         </footer>
       </div>
     </div>
+    <script>
+      document
+        .querySelector(".buttonpick button")
+        .addEventListener("click", function () {
+          alert(
+            "Thanks for choosing us! Your pickup request has been received."
+          );
+        });
+
+      document.querySelector(".app-btn").addEventListener("click", function () {
+        document
+          .querySelector(".downloadAppnow")
+          .scrollIntoView({ behavior: "smooth" });
+      });
+
+      document
+        .querySelector(".emailcontent span:last-child")
+        .addEventListener("click", function () {
+          const emailInput = document.querySelector(".emailcontent input");
+          const email = emailInput.value.trim();
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (email === "") {
+            alert("Please enter your email address.");
+          } else if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+          } else {
+            alert(`Thank you for subscribing, ${email}!`);
+            emailInput.value = "";
+          }
+        });
+
+      const cards = document.querySelectorAll(".pricing-container .card");
+      cards.forEach((card) => {
+        card.addEventListener("mouseover", () => {
+          card.style.boxShadow = "0 4px 15px rgba(0, 0, 0, 0.1)";
+          card.style.transform = "scale(1.03)";
+        });
+        card.addEventListener("mouseout", () => {
+          card.style.boxShadow = "none";
+          card.style.transform = "scale(1)";
+        });
+      });
+    </script>
   </body>
 </html>

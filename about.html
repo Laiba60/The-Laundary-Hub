@@ -155,5 +155,52 @@
         </footer>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const learnBtn = document.querySelector(".buttondiv button");
+        const textDiv = document.querySelector(".text");
+
+        const moreInfo = document.createElement("p");
+        moreInfo.textContent =
+          "We pick up, wash, fold, and deliver your laundry at your convenience. From eco-friendly detergents to fast delivery, we’ve got you covered!";
+        moreInfo.style.marginTop = "10px";
+        moreInfo.style.display = "none";
+        textDiv.appendChild(moreInfo);
+
+        learnBtn.addEventListener("click", function () {
+          if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+            learnBtn.textContent = "Show Less";
+          } else {
+            moreInfo.style.display = "none";
+            learnBtn.textContent = "Learn More";
+          }
+        });
+
+        const newsletterInput = document.querySelector(
+          ".emailcontent input[type='email']"
+        );
+        const newsletterButton =
+          document.querySelector(
+            ".emailcontent img[alt='arrow-right-circle']"
+          ) || document.querySelector(".emailcontent span:last-child");
+
+        newsletterButton.style.cursor = "pointer";
+
+        newsletterButton.addEventListener("click", function () {
+          const email = newsletterInput.value.trim();
+          const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+          if (!email) {
+            alert("Please enter your email.");
+          } else if (!email.match(emailPattern)) {
+            alert("Please enter a valid email.");
+          } else {
+            alert(`Thank you! You have subscribed with ${email}`);
+            newsletterInput.value = "";
+          }
+        });
+      });
+    </script>
   </body>
 </html>

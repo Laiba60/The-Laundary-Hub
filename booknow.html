@@ -99,7 +99,7 @@
 
                   <div class="form-group">
                     <label>Bag Size</label>
-                    <div class="bag-options">
+                    <div class="bag-options" id="bag-options">
                       <button class="active">Small (up to 5kg)</button>
                       <button>Medium (up to 10kg)</button>
                       <button>Large (up to 15kg)</button>
@@ -220,5 +220,49 @@
         </footer>
       </div>
     </div>
+  <script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const confirmBtn = document.querySelector(".confirm-btn");
+
+   
+    const bagButtons = document.querySelectorAll("#bag-options button");
+    let selectedBagSize = "Small";
+
+    bagButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        bagButtons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        selectedBagSize = btn.getAttribute("data-size");
+      });
+    });
+
+    confirmBtn.addEventListener("click", function () {
+      const pickupDate = document.getElementById("pickup-date").value;
+      const pickupTime = document.getElementById("pickup-time").value;
+      const instructions = document.getElementById("special-instructions").value;
+      const subscribe = document.getElementById("subscribe").checked;
+
+    
+      if (!pickupDate || !pickupTime) {
+        alert("Please select pickup date and time.");
+        return;
+      }
+
+ 
+      const summary = `
+Pickup Date: ${pickupDate}
+Pickup Time: ${pickupTime}
+Bag Size: ${selectedBagSize}
+Instructions: ${instructions || "None"}
+Subscribed: ${subscribe ? "Yes (10% Discount)" : "No"}
+      `;
+
+     
+      alert("Pickup Confirmed!\n\n" + summary);
+    });
+  });
+</script>
+
   </body>
 </html>

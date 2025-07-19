@@ -65,7 +65,7 @@
                 <div class="contactresource">
                   <div class="emaildiv">
                     <img src="images\Button.png" />
-                   <span>Email</span>
+                    <span>Email</span>
                     <input type="email" placeholder="help@zipmylaundry.co.uk" />
                   </div>
                   <div class="phonediv">
@@ -88,14 +88,19 @@
               <div class="part2">
                 <div class="detailsdiv">
                   <label>Name</label>
-                  <input type="text" placeholder="Cameron Williamson" />
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Cameron Williamson"
+                  />
                   <label>Email Address</label>
                   <input
                     type="email"
+                    id="email"
                     placeholder="cameron.williamson@example.com"
                   />
                   <label>Mobile Number</label>
-                  <input type="tel" placeholder="(303) 555-0105" />
+                  <input type="tel" id="mobile" placeholder="(303) 555-0105" />
                   <label for="message">Message</label>
                   <textarea
                     id="message"
@@ -105,7 +110,7 @@
                   ></textarea>
                 </div>
                 <div class="submitdetails">
-                  <button>Send Your Message</button>
+                  <button id="submitBtn">Send Your Message</button>
                 </div>
               </div>
             </div>
@@ -201,5 +206,44 @@
         </footer>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const submitBtn = document.getElementById("submitBtn");
+
+        submitBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const mobile = document.getElementById("mobile").value.trim();
+          const message = document.getElementById("message").value.trim();
+
+          if (!name || !email || !mobile || !message) {
+            alert("Please fill in all the fields.");
+            return;
+          }
+
+          const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+          if (!email.match(emailPattern)) {
+            alert("Please enter a valid email address.");
+            return;
+          }
+
+          if (mobile.length < 10) {
+            alert("Please enter a valid phone number.");
+            return;
+          }
+
+          alert(
+            `Thank you, ${name}! Your message has been sent.\n\nWe’ll get back to you soon.`
+          );
+
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("mobile").value = "";
+          document.getElementById("message").value = "";
+        });
+      });
+    </script>
   </body>
 </html>
