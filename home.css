@@ -83,7 +83,6 @@ ul li a {
   align-items: center;
 }
 
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -116,11 +115,15 @@ ul li a {
   text-decoration: none;
   font-weight: 600;
 }
-.image{
-  display:flex;
-  gap:30px;
-  padding-left:50px;
+
+.image {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end; 
+  padding-left: 0; 
+  padding-right: 0; 
 }
+
 .sec {
   width: 100%;
   margin-top: 20px;
@@ -182,7 +185,6 @@ ul li a {
   color: #00aaff;
   border: 2px solid #00aaff;
 }
-
 
 .testimonial {
   background: #fff;
@@ -258,48 +260,43 @@ ul li a {
   color: #7b7b7b;
   padding-bottom: 30px;
 }
-.thirdsec{
-width:100%;
-
+.thirdsec {
+  width: 100%;
 }
-.colorwrap{
-background-color: rgba(19, 158, 227, 0.1);
-padding:120px 60px;
-
+.colorwrap {
+  background-color: rgba(19, 158, 227, 0.1);
+  padding: 120px 60px;
 }
-.choosing h2{
-  font-weight:700;
-  font-size:40px;
-   font-family: "Lato", sans-serif;
-   color:#04090D;
-
+.choosing h2 {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  color: #04090d;
 }
-.choosing p{
-  color:#7B7B7B;
-  font-weight:400;
-  font-size:18px;
+.choosing p {
+  color: #7b7b7b;
+  font-weight: 400;
+  font-size: 18px;
   font-family: "Lato", sans-serif;
 }
 .feature {
-  display:flex;
-  margin-top:20px;
-   margin-left:20px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
 }
-.feature p{
-  font-weight:400;
-  font-size:14px;
+.feature p {
+  font-weight: 400;
+  font-size: 14px;
   font-family: "Lato", sans-serif;
-color:#7B7B7B;
-  margin-top:10px;
-  margin-left:10px;
+  color: #7b7b7b;
+  margin-top: 10px;
+  margin-left: 10px;
 }
-.feature h4{
-  color:#04090D;
-  font-weight:700;
-  font-size:18px;
-  margin-left:10px;
-
-
+.feature h4 {
+  color: #04090d;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 10px;
 }
 .fourthsec {
   width: 100%;
@@ -490,16 +487,16 @@ button {
   font-size: 25px;
   font-weight: 600;
   font-family: "Lato", sans-serif;
-  
+
   margin-bottom: 10px;
 }
 
-.sectionseventh  p {
+.sectionseventh p {
   color: #7b7b7b;
   font-size: 20px;
   font-weight: 400;
   font-family: "Lato", sans-serif;
- 
+
   line-height: 1.6;
 }
 
@@ -767,4 +764,165 @@ h2 {
 .social-icons img {
   height: 20px;
   width: 20px;
+}
+/* Small tablets and large phones (landscape, 768px and down) */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .subtext {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .allservices {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .colorwrap {
+    padding: 60px 20px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .feature {
+    margin-left: 0;
+  }
+
+  .contair {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .bluecontent h3 {
+    font-size: 32px;
+  }
+
+  .weekly {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .sixthsection .wrapper {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .basicplan,
+  .premiumplan {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .basicplan button,
+  .premiumplan button {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .sectionseventh p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .sectionfooter .downloadapp {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Iphone14 {
+    display: none;
+  }
+
+  .textframe2 {
+    flex-direction: column;
+  }
+
+  .secondpart .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .lastline {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+/* Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .app-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .tagline {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .text h2 {
+    font-size: 28px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .choosing h2 {
+    font-size: 28px;
+  }
+
+  .choosing p {
+    font-size: 16px;
+  }
+
+  .bluecontent h3 {
+    font-size: 28px;
+  }
+
+  .weekly h2 {
+    font-size: 28px;
+  }
+
+  .sectionseventh h3 {
+    font-size: 22px;
+  }
+
+  .sectionseventh p {
+    font-size: 14px;
+  }
 }
