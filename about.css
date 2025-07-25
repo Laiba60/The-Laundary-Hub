@@ -56,7 +56,7 @@ ul {
   padding: 0;
   margin: 0;
   text-align: center;
-  padding-left: 150px;
+
 }
 
 ul li a {
@@ -84,6 +84,38 @@ ul li a {
   align-items: center;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.app-btn {
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
 .frameafterheader {
   width: 96%;
   max-width: 1200px;
