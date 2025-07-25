@@ -262,6 +262,19 @@ Subscribed: ${subscribe ? "Yes (10% Discount)" : "No"}
       alert("Pickup Confirmed!\n\n" + summary);
     });
   });
+ 
+  document.addEventListener("DOMContentLoaded", function () {
+    const appBtn = document.querySelector(".app-btn");
+
+    if (appBtn) {
+      appBtn.addEventListener("click", function () {
+        // Redirect user to your app store link
+        window.open("https://play.google.com/store/apps/details?id=com.example.app", "_blank");
+      });
+    }
+  });
+
+
 </script>
 
   </body>

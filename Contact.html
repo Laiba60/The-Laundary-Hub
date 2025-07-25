@@ -244,6 +244,20 @@
           document.getElementById("message").value = "";
         });
       });
+     
+ 
+  const appBtn = document.querySelector(".app-btn");
+
+  
+  appBtn.addEventListener("click", function () {
+    
+    const appDownloadLink = "https://play.google.com/store/apps/details?id=com.example.app";
+    
+
+    window.open(appDownloadLink, "_blank"); 
+  });
+
+
     </script>
   </body>
 </html>
