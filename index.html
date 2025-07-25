@@ -465,78 +465,83 @@
       </div>
     </div>
     <script>
-            document.addEventListener("DOMContentLoaded", () => {
-
-        document.querySelectorAll("nav ul li a").forEach(link => {
-          link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const section = this.getAttribute("href");
-            if (section.startsWith("#")) {
-              document.querySelector(section).scrollIntoView({
-                behavior: "smooth"
-              });
-            }
-          });
-        });
 
 
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll("nav ul li a");
 
-        window.addEventListener("scroll", () => {
-          let current = "";
-          sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            if (scrollY >= sectionTop - 60) {
-              current = section.getAttribute("class");
-            }
-          });
-
-          navLinks.forEach(link => {
-            link.classList.remove("active");
-            if (link.getAttribute("href").includes(current)) {
-              link.classList.add("active");
-            }
-          });
-        });
+const appBtn = document.querySelector(".app-btn");
+if (appBtn) {
+  appBtn.addEventListener("click", () => {
+    window.open("https://play.google.com/", "_blank"); 
+  });
+}
 
 
-        const emailInput = document.querySelector(".emailcontent input");
-        const submitBtn = document.querySelector(".emailcontent span:last-child");
-
-        if (emailInput && submitBtn) {
-          submitBtn.addEventListener("click", () => {
-            const email = emailInput.value.trim();
-            if (validateEmail(email)) {
-              alert(`Thanks for subscribing with ${email}!`);
-              emailInput.value = "";
-            } else {
-              alert("Please enter a valid email address.");
-            }
-          });
-        }
-
-        function validateEmail(email) {
-          const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          return re.test(email);
-        }
+const pickupBtn = document.querySelector(".primary-btn");
+if (pickupBtn) {
+  pickupBtn.addEventListener("click", () => {
+    alert("Redirecting to the booking page...");
+    window.location.href = "booknow.html"; 
+  });
+}
 
 
-        const planButtons = document.querySelectorAll(".basicplan button, .premiumplan button");
-        planButtons.forEach(btn => {
-          btn.addEventListener("click", () => {
-            alert("Plan selected! Thank you for choosing us.");
-          });
-        });
+const howItWorksBtn = document.querySelector(".secondary-btn");
+if (howItWorksBtn) {
+  howItWorksBtn.addEventListener("click", () => {
+    const howItWorksSection = document.querySelector(".sec");
+    howItWorksSection.scrollIntoView({ behavior: "smooth" });
+  });
+}
 
 
-        const bookingBtn = document.querySelector(".primary-btn");
-        if (bookingBtn) {
-          bookingBtn.addEventListener("click", () => {
-            alert("Redirecting to booking form (not implemented yet).");
-          });
-        }
-      });
+const pricingBtn = document.querySelector(".fourthsec button");
+if (pricingBtn) {
+  pricingBtn.addEventListener("click", () => {
+    alert("Showing full pricing...");
+    document.querySelector(".sixthsection").scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+
+document.querySelectorAll(".sixthsection button").forEach(button => {
+  button.addEventListener("click", () => {
+    alert("Thank you for choosing a plan!");
+  });
+});
+
+
+document.querySelectorAll(".allservices a").forEach(link => {
+  link.style.cursor = "pointer";
+  link.addEventListener("click", () => {
+    alert("More info coming soon...");
+  });
+});
+
+
+const newsletterInput = document.querySelector('.emailcontent input[type="email"]');
+const sendIcon = document.querySelector('.emailcontent img[alt="arrow"]') || document.querySelector('.emailcontent span:last-child img');
+
+if (newsletterInput && sendIcon) {
+  sendIcon.style.cursor = "pointer";
+  sendIcon.addEventListener("click", () => {
+    const email = newsletterInput.value.trim();
+    if (!email || !email.includes("@")) {
+      alert("Please enter a valid email address.");
+    } else {
+      alert(`Subscribed with ${email}!`);
+      newsletterInput.value = "";
+    }
+  });
+}
+
+
+document.querySelectorAll(".social-icons img").forEach((icon, index) => {
+  icon.style.cursor = "pointer";
+  icon.addEventListener("click", () => {
+    alert(`Opening social link #${index + 1}...`);
+  });
+});
+
     </script>
   </body>
 </html>

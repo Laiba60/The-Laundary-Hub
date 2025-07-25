@@ -197,12 +197,7 @@
       </div>
     </div>
     <script>
-      document.querySelectorAll("nav ul li a").forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault(); // prevent default behavior
-    alert(`Redirecting to ${link.textContent} page...`); // or dynamically load content
-  });
-});
+ 
 const appBtn = document.querySelector(".app-btn");
 if (appBtn) {
   appBtn.addEventListener("click", () => {
